@@ -1,9 +1,15 @@
 # Oralce-Cloud-Valheim-Game-Server-Setup
-![valheim_oracle](valheim_oracle.png)
+![valheim_oracle](docs/valheim_oracle.png)
 
 Step 1:
 Sign up for Oracle Cloud Free Tier: https://www.oracle.com/cloud/free/
-Its a free trial and a free account too. You won't be charged and can still use everal free services after the trail. Plus they nicely label all the free stuff. In this we will use 1 of the 2 free virtual machines. 
+
+![valheim_oracle](docs/oracle_free_tier.png)
+- Its a free trial and a free account too. 
+- You won't be charged and can still use everal free services after the trail. 
+- Plus they nicely label all the free stuff. 
+- In this we will use 1 of the 2 free virtual machines. 
+
 
 Step 2:
 Create The Virtual Machine
