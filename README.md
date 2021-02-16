@@ -1,4 +1,5 @@
 # Oralce-Cloud-Valheim-Game-Server-Setup
+![valheim_oracle](valheim_oracle.png)
 
 Step 1:
 Sign up for Oracle Cloud Free Tier: https://www.oracle.com/cloud/free/
