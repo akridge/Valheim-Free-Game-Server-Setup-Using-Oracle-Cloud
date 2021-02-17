@@ -30,9 +30,9 @@ https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm
 
 ## Step 4: Go ahead and setup the firewall stuff. 
 
-Valheim using the following ports, but could be changed if you want during config. 
+Valheim uses the following ports, but could be changed if you want during config. 
 
-Install the following one at a time
+Run the following one at a time
 ```
 sudo firewall-cmd --permanent --zone=public --add-port=2456/udp
 ```
@@ -42,6 +42,8 @@ sudo firewall-cmd --permanent --zone=public --add-port=2457/udp
 ```
 sudo firewall-cmd --reload
 ```
+
+You will also need to add 
 
 ## Step 5: Install the linux game server manager
 https://linuxgsm.com/lgsm/vhserver/
