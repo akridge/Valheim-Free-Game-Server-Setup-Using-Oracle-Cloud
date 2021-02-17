@@ -28,7 +28,7 @@ This will be different for every operating system so check out the offical oracl
 https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm
 
 
-## Step 4: Go ahead and setup the firewall stuff. 
+## Step 4: Go ahead and setup the firewall stuff on the server and cloud account. 
 
 Valheim uses the following ports, but could be changed if you want during config. 
 
@@ -43,7 +43,12 @@ sudo firewall-cmd --permanent --zone=public --add-port=2457/udp
 sudo firewall-cmd --reload
 ```
 
-You will also need to add 
+### You will also need to add the following ports to the ingess rule set
+![valheim_oracle](docs/s5.jpg)
+![valheim_oracle](docs/s6.jpg)
+![valheim_oracle](docs/s7.jpg)
+![valheim_oracle](docs/s8.jpg)
+![valheim_oracle](docs/s9.jpg)
 
 ## Step 5: Install the linux game server manager
 https://linuxgsm.com/lgsm/vhserver/
