@@ -3,7 +3,17 @@
 
 A more enhanced how-to guide coming soon after I do some testing of different compute configurations. 
 
-## Step 1: Sign up for Oracle Cloud Free Tier
+### Table of Contents
+1. [Sign up for Oracle Cloud Free Tier](#signupfororaclecloudfreetier)
+2. [Create The Virtual Machine.](#CreateTheVirtualMachine)
+3. [Login to the Virtual Machine](#LogintotheVirtualMachine)
+4. [Go ahead and setup the firewall stuff on the server and cloud account](#Goaheadandsetupthefirewallstuffontheserverandcloudaccount)
+5. [Install the Linux Game Server Manager(LGSM)](#InstalltheLinuxGameServerManager(LGSM))
+6. [OR Install CubeCoders Application Management Panel(AMP)](#ORInstallCubeCodersApplicationManagementPanel(AMP))
+7. [Setup your Valheim config file](#Setupyourconfigfile)
+8. [Optional - Migrate your world](#Optional:Migrateyourworld)
+
+## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
 
 ![valheim_oracle](docs/oracle_free_tier.png)
@@ -12,23 +22,21 @@ Link: https://www.oracle.com/cloud/free/
 - Plus they nicely label all the free stuff. 
 - In this we will use 1 of the 2 free virtual machines. 
 
+## Create The Virtual Machine
 
-
-## Step 2: Create The Virtual Machine. 
-
-Choose the following and make sure to download the SSH keys to login in the next step.
+Choose the following and make sure to download the SSH keys to login in the next step. This is their free tier VM and should be okay for you and a couple buddies. 
 ![valheim_oracle](docs/s1.jpg)
 ![valheim_oracle](docs/s2.jpg)
 ![valheim_oracle](docs/s3.jpg)
 ![valheim_oracle](docs/s4.jpg)
 
-## Step 3: Login to the Virtual Machine
+## Login to the Virtual Machine
 
 This will be different for every operating system so check out the offical oracle doc:
 https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm
 
 
-## Step 4: Go ahead and setup the firewall stuff on the server and cloud account. 
+## Go ahead and setup the firewall stuff on the server and cloud account
 
 Valheim uses the following ports, but could be changed if you want during config. 
 
@@ -50,26 +58,27 @@ sudo firewall-cmd --reload
 ![valheim_oracle](docs/s8.jpg)
 ![valheim_oracle](docs/s9.jpg)
 
-## Step 5: Install the linux game server manager
-https://linuxgsm.com/lgsm/vhserver/
+## Install the Linux Game Server Manager(LGSM)
+More info here: https://linuxgsm.com/lgsm/vhserver/
 
-
-### 5a: Dependencies install
+### Dependencies install
 login
 then  type the following to login as root
 ```
 sudo su 
 ```
-Then install the dependecies. Run the following one at a time
+Then install the dependencies. Run the following one at a time
 ```
 yum install epel-release
 ```
 ```
 yum install curl wget tar bzip2 gzip unzip python3 binutils bc jq tmux glibc.i686 libstdc++ libstdc++.i686
 ```
-###5b. Install GameDig since 
+### Install GameDig
 Its a recommended additional module that allows LinuxGSM to gather more info from the game
+```
 curl -sL https://rpm.nodesource.com/setup_12.x | bash -
+```
 ```
 yum install nodejs
 ```
@@ -79,11 +88,11 @@ npm install gamedig -g
 ```
 npm update -g
 ```
-###5c.Run this since it seems to be left out when installing linux game server manager
+### Run this since it seems to be left out when installing linux game server manager
 ```
 sudo yum install nmap-ncat
 ```
-## Step 6: Use LGSM to install Valheim
+### Install LGSM & Use it to install Valheim
 
 The next few steps are pretty easy. 
 Create the user 
@@ -102,10 +111,9 @@ wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm
 ```
 ./vhserver install
 ```
-___
-# And done. Now for config and daily use cases. 
+### And done with LGSM install. Now for config and daily use cases. 
 
-### When logged into server as vhserver. See all commands:
+### When logged into server as vhserver. Run the following to see all commands:
 ```
 ./vhserver
 ```
@@ -119,12 +127,34 @@ ___
 ./vhserver backup
 ./vhserver monitor
 ```
-Once you start the server it will populate with a default config. 
+Once you start the server it will populate with a default config. Check out steps below to migrate your own world. 
+___
+## OR Install CubeCoders Application Management Panel(AMP)
+More info at the link: 
+- https://cubecoders.com/AMP
+- https://cubecoders.com/AMPInstall
+-- note its paid server administration software. But its fairly inexpensive and feature rich. 
 
-## Step 7: Setup your config file
+### Install AMP 
+This is their quick install command. It will walk you through all the steps and is very easy. I skipped the https stuff.
+```
+bash <(wget -qO- [getamp.sh](http://getamp.sh/))
+```
+- Also when it asks you to finish the install via AMP login, it shows you the ip/port to go check out. 
+- I had to add the port 8080 to my ingess rules like in step 4 above before I could access the panel. 
+- You can also skip the license and add that after. 
+- Add the license key under Configuration > New Instance Defaults
+ 
+### Install Valheim with AMP
+This part is just wonderfully easy. 
+- Click Instances > Create Instance 
+
+
+
+## Setup your config file
 ...to be added
 
-## Step 8: Optional - Migrate your world
+## Optional: Migrate your world
 ...to be added
 ```
 sudo chmod -R ugo+rw /home/vhserver/
