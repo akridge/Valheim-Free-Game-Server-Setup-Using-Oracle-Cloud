@@ -10,8 +10,8 @@ A more enhanced how-to guide coming soon after I do some testing of different co
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
 5. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
 6. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
-7. [Setup Valheim+ on AMP](#setup-valheim-on-amp)
-8. [Reference - My Valheim config file](#setup-your-config-file)
+7. [Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
+8. [Reference - My Valheim config file](#reference---my-valheim-config-file)
 9. [Optional - Migrate your world](#optional-migrate-your-world)
 
 ## Sign up for Oracle Cloud Free Tier
