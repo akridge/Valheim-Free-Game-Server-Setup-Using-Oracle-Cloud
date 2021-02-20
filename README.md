@@ -247,7 +247,7 @@ cd /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/
 ```
 
 ### Waiting for the install
-So I got a bunch of errors and I wasn't the only one. But in the end it still worked. I waited like 10/15mins and eventually tried it. Here is what the errors look like and the solution was to edit the valheim_plus.cfg server stuff:
+So I got a bunch of errors and I wasn't the only one. But in the end it still worked. I waited like 10/15mins and eventually tried it. Here is what the errors look like and the solution was to edit the valheim_plus.cfg server stuff in the steps above. 
 - https://github.com/nxPublic/ValheimPlus/issues/41
 
 
