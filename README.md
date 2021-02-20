@@ -253,7 +253,10 @@ So I got a bunch of errors and I wasn't the only one. But in the end it still wo
 Its good to see if it works on your standalone system first before testing the dedicated server. If your system works then just make sure you have the same valheim_plus.cfg file on both the AMP server folder and local machine. 
 
 ## Reference - My Valheim config file
-...to be added
+https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
+
+## Reference - My Valheim+ config file
+https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
 
 ## Optional: Migrate your world
 Drag and drop your world file from your local drive to the server data folder. Must be the same name as in the AMP instance mange settings. 
