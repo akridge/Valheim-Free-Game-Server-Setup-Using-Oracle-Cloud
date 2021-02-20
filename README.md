@@ -231,13 +231,15 @@ So to do this I used filezilla(https://filezilla-project.org/) ftp program since
 ![amp](docs/amp/s20.png)
 
 ### Once thats done then you have to login to your server console(again I used putty) and change permissions to that run_bepinex.sh file
+Make sure to change the script to include your instance name.
 ```
 sudo su
-chmod u+x /home/amp/.ampdata/instances/Test1/Valheim/896660/run_bepinex.sh
+chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/run_bepinex.sh
 ```
-### Change your working directory:
+### Change your working directory: 
+Make sure to change the script to include your instance name.
 ```
-cd /home/amp/.ampdata/instances/Test1/Valheim/896660/
+cd /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/
 ```
 ### Then run: run_bepinex.sh
 ```
@@ -257,6 +259,7 @@ https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main
 
 ## Optional: Migrate your world
 Drag and drop your world file from your local drive to the server data folder. Must be the same name as in the AMP instance mange settings. 
+Make sure to change the path to include your name.
 ```
 C:\Users\yourname\AppData\LocalLow\IronGate\Valheim\worlds
 ```
