@@ -169,8 +169,8 @@ This part is just wonderfully easy.
 ### This is the file browser
 ![amp](docs/amp/s10.png)
 
-## Setup Valheim+ on AMP
-Okay the Valheim+ Mode documentation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
+## Setup Valheim+ Mod on AMP Game Instance
+Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
 - Link to the repo: https://github.com/nxPublic/ValheimPlus
 
 ### Setup Valheim+ on your machine first. Download the latest package called WindowsClient.zip over at their link. (Scroll down and click "assets")
