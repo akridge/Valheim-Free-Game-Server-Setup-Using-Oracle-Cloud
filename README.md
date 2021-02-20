@@ -10,8 +10,9 @@ A more enhanced how-to guide coming soon after I do some testing of different co
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
 5. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
 6. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
-7. [Setup your Valheim config file](#setup-your-config-file)
-8. [Optional - Migrate your world](#optional-migrate-your-world)
+7. [Setup Valheim+ on AMP](#setup-your-config-file)
+8. [Setup your Valheim config file](#setup-your-config-file)
+9. [Optional - Migrate your world](#optional-migrate-your-world)
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
@@ -149,6 +150,26 @@ bash <(wget -qO- [getamp.sh](http://getamp.sh/))
 This part is just wonderfully easy. 
 - Click Instances > Create Instance 
 
+
+![amp](docs/amp/s1.png)
+![amp](docs/amp/s2.png)
+![amp](docs/amp/s3.png)
+### And done. Now click on the instance you just made to view settings to change as you wish. 
+![amp](docs/amp/s4.png)
+### Edit Ports: These were my defaults setup by AMP.
+![amp](docs/amp/s5.png)
+### Edit Settings: Change as you see fit. 
+![amp](docs/amp/s6.png)
+### Click Mange and you should see the following instance manage screen
+![amp](docs/amp/s7.png)
+### Before you start the server just make sure to give it a name and password. Also the world seed is the name of your world if you're going to migrate from non-dedicated local file. 
+![amp](docs/amp/s8.png)
+### Click start and you should see the stats start increasing. 
+![amp](docs/amp/s9.png)
+### This is the file browser
+![amp](docs/amp/s10.png)
+
+## Setup Valheim+ on AMP
 
 
 ## Setup your config file
