@@ -170,7 +170,7 @@ This part is just wonderfully easy.
 ![amp](docs/amp/s10.png)
 
 ## Setup Valheim+ on AMP
-Okay the Valheim+ Mode documenation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
+Okay the Valheim+ Mode documentation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
 - Link to the repo: https://github.com/nxPublic/ValheimPlus
 
 ### Setup Valheim+ on your machine first. Download the latest package called WindowsClient.zip over at their link. (Scroll down and click "assets")
@@ -213,27 +213,54 @@ enforceMod=false
 ```
 
 ### Now Locate your AMP Instance server folder
-So to do this I used filezilla. The AMP instance setup above must be running, but server can be off. 
+So to do this I used filezilla(https://filezilla-project.org/) ftp program since its free. The AMP instance setup above must be running, but server can be off. 
+![amp](docs/amp/s13.png)
+### Go to File>Site Manager
+![amp](docs/amp/s14.png)
+### Add new site. Host is your ip address, port is the Instance SFTP port you setup above. To find it click on instance > edit ports. To add a different instance then you just change the port and should be same IP address. 
+![amp](docs/amp/s15.png)
+### User/Password is Admin and the password you setup for your AMP portal
+![amp](docs/amp/s16.png)
+### Click connect and you should see the file directory on the right side and your local files on the left. 
+![amp](docs/amp/s17.png)
+### As a close up the instance server game file are in the number folder 
+![amp](docs/amp/s18.png)
+### Open that up and you see all the game files. 
+![amp](docs/amp/s19.png)
+### Then just drag and drop the UnixServer files over. Say okay to overwrite. 
+![amp](docs/amp/s20.png)
 
-
-
-
-
-
-
-### Once thats done then you have to login to your server console and change permissions to that run_bepinex.sh file
+### Once thats done then you have to login to your server console(again I used putty) and change permissions to that run_bepinex.sh file
 ```
-chmod u+x run_bepinex.sh
+sudo su
+chmod u+x /home/amp/.ampdata/instances/Test1/Valheim/896660/run_bepinex.sh
+```
+### Change your working directory:
+```
+cd /home/amp/.ampdata/instances/Test1/Valheim/896660/
 ```
 ### Then run: run_bepinex.sh
 ```
-
+./run_bepinex.sh
 ```
+
+### Waiting for the install
+So I got a bunch of errors and I wasn't the only one. But in the end it still worked. I waited like 10/15mins and eventually tried it. Here is what the errors look like and the solution was to edit the valheim_plus.cfg server stuff:
+- https://github.com/nxPublic/ValheimPlus/issues/41
+
+
+### Testing
+Its good to see if it works on your standalone system first before testing the dedicated server. If your system works then just make sure you have the same valheim_plus.cfg file on both the AMP server folder and local machine. 
+
 ## Reference - My Valheim config file
 ...to be added
 
 ## Optional: Migrate your world
-...to be added
+Drag and drop your world file from your local drive to the server data folder. Must be the same name as in the AMP instance mange settings. 
 ```
-sudo chmod -R ugo+rw /home/vhserver/
+C:\Users\yourname\AppData\LocalLow\IronGate\Valheim\worlds
+```
+to
+```
+/896660/Data/worlds
 ```
