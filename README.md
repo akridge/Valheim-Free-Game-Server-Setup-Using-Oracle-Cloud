@@ -4,14 +4,14 @@
 A more enhanced how-to guide coming soon after I do some testing of different compute configurations. 
 
 ### Table of Contents
-1. [Sign up for Oracle Cloud Free Tier](#signupfororaclecloudfreetier)
-2. [Create The Virtual Machine.](#CreateTheVirtualMachine)
-3. [Login to the Virtual Machine](#LogintotheVirtualMachine)
-4. [Go ahead and setup the firewall stuff on the server and cloud account](#Goaheadandsetupthefirewallstuffontheserverandcloudaccount)
-5. [Install the Linux Game Server Manager(LGSM)](#InstalltheLinuxGameServerManager(LGSM))
-6. [OR Install CubeCoders Application Management Panel(AMP)](#ORInstallCubeCodersApplicationManagementPanel(AMP))
-7. [Setup your Valheim config file](#Setupyourconfigfile)
-8. [Optional - Migrate your world](#Optional:Migrateyourworld)
+1. [Sign up for Oracle Cloud Free Tier](#sign-up-for-oracle-cloud-free-tier)
+2. [Create The Virtual Machine.](#create-the-virtual-machine)
+3. [Login to the Virtual Machine](#login-to-the-virtual-machine)
+4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
+5. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
+6. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
+7. [Setup your Valheim config file](#setup-your-config-file)
+8. [Optional - Migrate your world](#optional-migrate-your-world)
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
