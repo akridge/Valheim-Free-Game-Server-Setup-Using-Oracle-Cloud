@@ -255,9 +255,6 @@ Its good to see if it works on your standalone system first before testing the d
 ## Reference - My Valheim config file
 https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
 
-## Reference - My Valheim+ config file
-https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
-
 ## Optional: Migrate your world
 Drag and drop your world file from your local drive to the server data folder. Must be the same name as in the AMP instance mange settings. 
 ```
