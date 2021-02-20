@@ -10,8 +10,8 @@ A more enhanced how-to guide coming soon after I do some testing of different co
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
 5. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
 6. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
-7. [Setup Valheim+ on AMP](#setup-your-config-file)
-8. [Setup your Valheim config file](#setup-your-config-file)
+7. [Setup Valheim+ on AMP](#setup-valheim-on-amp)
+8. [Reference - My Valheim config file](#setup-your-config-file)
 9. [Optional - Migrate your world](#optional-migrate-your-world)
 
 ## Sign up for Oracle Cloud Free Tier
@@ -170,9 +170,66 @@ This part is just wonderfully easy.
 ![amp](docs/amp/s10.png)
 
 ## Setup Valheim+ on AMP
+Okay the Valheim+ Mode documenation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
+- Link to the repo: https://github.com/nxPublic/ValheimPlus
+
+### Setup Valheim+ on your machine first. Download the latest package called WindowsClient.zip over at their link. (Scroll down and click "assets")
+- https://github.com/nxPublic/ValheimPlus/releases/tag/0.8
+- Locate your game folder by starting up steam and:
+- Right click the valheim game in your steam library
+- Go to Manage>Browse local files
+- Steam should open your game folder for you when clicked
+- Then just unzip everything in there
+
+### Download the latest package called UnixServer.zip over at their link. (Scroll down and click "assets")
+- https://github.com/nxPublic/ValheimPlus/releases/tag/0.8
+
+### Go ahead and unzip it. Then edit the run_bepinex.sh file. I did this before uploading to the server
+
+Scroll to the bottom of the run_bepinex.sh file and add in the instance name, password, and world you setup in AMP.
+```
+"${PWD}/${executable_name}" -name YOURINSTANCENAME -password YOURPASSWORD -nographics -batchmode -port 2456 -world WORLDNAME
+```
+### Also edit your config file in that folder UnixServer\BepInEx\config\valheim_plus.cfg
+Change whatever you like, but for me I had to also update the following: Look for the section called server
+```
+[Server]
+enabled=false
+; enable/disable Server changes
+
+maxPlayers=10
+; (int) default is 10
+
+disableServerPassword=false
+; (boolean) default is false
+
+enforceConfiguration=false
+; enforce every user trying to join your game or server to have the same mod configuration.
+; NOTE: if people want to join your server with a custom configuration, they need to set this setting to false as well as the server.
+
+enforceMod=false
+; enforce every user to atleast have the mod installed when connecting to the server
+; turn this off to remove version restrictions from your client and from your server
+```
+
+### Now Locate your AMP Instance server folder
+So to do this I used filezilla. The AMP instance setup above must be running, but server can be off. 
 
 
-## Setup your config file
+
+
+
+
+
+### Once thats done then you have to login to your server console and change permissions to that run_bepinex.sh file
+```
+chmod u+x run_bepinex.sh
+```
+### Then run: run_bepinex.sh
+```
+
+```
+## Reference - My Valheim config file
 ...to be added
 
 ## Optional: Migrate your world
