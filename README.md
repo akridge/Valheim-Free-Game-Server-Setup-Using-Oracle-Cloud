@@ -62,7 +62,13 @@ sudo firewall-cmd --reload
 
 ## Setup the Free Network Load Balancer
 This helps with lag. 
-
+![valheim_oracle](docs/lb1.png)
+![valheim_oracle](docs/lb2.png)
+![valheim_oracle](docs/lb3.png)
+![valheim_oracle](docs/lb4.png)
+![valheim_oracle](docs/lb5.png)
+![valheim_oracle](docs/lb6.png)
+![valheim_oracle](docs/lb7.png)
 
 ## Install the Linux Game Server Manager(LGSM)
 More info here: https://linuxgsm.com/lgsm/vhserver/
