@@ -8,11 +8,12 @@ A more enhanced how-to guide coming soon after I do some testing of different co
 2. [Create The Virtual Machine.](#create-the-virtual-machine)
 3. [Login to the Virtual Machine](#login-to-the-virtual-machine)
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
-5. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
-6. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
-7. [Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
-8. [Reference - My Valheim config file](#reference---my-valheim-config-file)
-9. [Optional - Migrate your world](#optional-migrate-your-world)
+5. [Setup the Free Network Load Balancer](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
+6. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
+7. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
+8. [Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
+9. [Reference - My Valheim config file](#reference---my-valheim-config-file)
+10. [Optional - Migrate your world](#optional-migrate-your-world)
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
@@ -58,6 +59,10 @@ sudo firewall-cmd --reload
 ![valheim_oracle](docs/s7.jpg)
 ![valheim_oracle](docs/s8.jpg)
 ![valheim_oracle](docs/s9.jpg)
+
+## Setup the Free Network Load Balancer
+This helps with lag. 
+
 
 ## Install the Linux Game Server Manager(LGSM)
 More info here: https://linuxgsm.com/lgsm/vhserver/
