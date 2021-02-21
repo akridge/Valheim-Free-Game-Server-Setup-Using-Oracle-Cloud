@@ -1,14 +1,20 @@
 # Oralce-Cloud-Valheim-Game-Server-Setup-for-Free
 ![valheim_oracle](docs/valheim_oracle.png)
 
-A more enhanced how-to guide coming soon after I do some testing of different compute configurations. 
+Hopefully this helps someone get started. The free version will only be good for a couple people. 
+
+But if you want to use your free trial credits or upgrade then I would recommend the following and its pretty much the same setup steps as below: 
+| Price | Shape | CPU Core | Memory(GB) | Load Balancer |
+| ----------- | ----------- | ----------- | ----------- |  ----------- |
+| Free | VM.Standard.E2.1.Micro| 1 | 1 |1 w/ 10mbps|
+| Paid(recommended)| VM.Standard.E3.Flex| 1 | 3|1 w/ 10mbps|
 
 ### Table of Contents
 1. [Sign up for Oracle Cloud Free Tier](#sign-up-for-oracle-cloud-free-tier)
 2. [Create The Virtual Machine.](#create-the-virtual-machine)
 3. [Login to the Virtual Machine](#login-to-the-virtual-machine)
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
-5. [Setup the Free Network Load Balancer](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
+5. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
 6. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
 7. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
 8. [Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
@@ -62,6 +68,7 @@ sudo firewall-cmd --reload
 
 ## Setup the Free Network Load Balancer
 This helps with lag. 
+
 ![valheim_oracle](docs/lb1.png)
 ![valheim_oracle](docs/lb2.png)
 ![valheim_oracle](docs/lb3.png)
