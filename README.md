@@ -188,7 +188,7 @@ Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least.
 
 Scroll to the bottom of the run_bepinex.sh file and add in the instance name, password, and world you setup in AMP.
 ```
-"${PWD}/${executable_name}" -name YOURSERVERNAME -password YOURPASSWORD -nographics -batchmode -port 2456 -world WORLDNAME
+"${PWD}/${executable_name}" -name YOURSERVERNAME -password YOURPASSWORD -nographics -batchmode -port YOURPORTNUMBER -world WORLDNAME
 ```
 ### Also edit your config file in that folder UnixServer\BepInEx\config\valheim_plus.cfg
 Change whatever you like, but for me I had to also update the following: Look for the section called server
