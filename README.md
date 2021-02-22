@@ -151,7 +151,7 @@ Once you start the server it will populate with a default config. Check out step
 ___
 ## OR Method 2: Install CubeCoders Application Management Panel(AMP)
 ![valheim_oracle](docs/AMP.png)
-More info at the link: 
+More info at these links.
 - https://cubecoders.com/AMP
 - https://cubecoders.com/AMPInstall
 -- note its paid server administration software. But its fairly inexpensive and feature rich. 
