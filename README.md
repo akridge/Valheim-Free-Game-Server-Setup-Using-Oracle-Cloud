@@ -15,10 +15,10 @@ But if you want to use your free trial credits or upgrade then I would recommend
 3. [Login to the Virtual Machine](#login-to-the-virtual-machine)
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
 5. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
-6. [Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
-7. [OR Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
-8. [Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
-9. [Reference - My Valheim+ config file](#reference---my-valheim-config-file)
+6. [Method 1: Install the Linux Game Server Manager(LGSM)](#install-the-linux-game-server-managerlgsm)
+7. [OR Method 2 Install CubeCoders Application Management Panel(AMP)](#or-install-cubecoders-application-management-panelamp)
+8. [Optional Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
+9. [Optional Reference - My Valheim+ config file](#reference---my-valheim-config-file)
 10. [Optional - Migrate your world](#optional-migrate-your-world)
 
 ## Sign up for Oracle Cloud Free Tier
@@ -276,12 +276,32 @@ Its good to see if it works on your standalone system first before testing the d
 https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
 
 ## Optional: Migrate your world
-Drag and drop your world file from your local drive to the server data folder. Must be the same name as in the AMP instance mange settings. 
-Make sure to change the path to include your name.
+Drag and drop your world file from your local drive to the server data folder using filezilla. 
+### If using LGSM
+Copy from local drive
 ```
 C:\Users\yourname\AppData\LocalLow\IronGate\Valheim\worlds
 ```
-to
+to remote server folder
+```
+/home/vhserver/.config/unity3d/IronGate/Valheim/worlds
+```
+### If using AMP
+Must be the same name as in the AMP instance mange settings. Make sure to change the path to include your name.
+```
+C:\Users\yourname\AppData\LocalLow\IronGate\Valheim\worlds
+```
+to remote server folder
 ```
 /896660/Data/worlds
+```
+### If you have issues with moving files due to permissions 
+Update them via server console(putty)
+LGSM example
+```
+sudo chmod -R ugo+rw /home/vhserver/
+```
+AMP example
+```
+sudo chmod -R ugo+rwx /home/amp/
 ```
