@@ -190,6 +190,8 @@ This part is just wonderfully easy.
 ![amp](docs/amp/s10.png)
 
 ## Setup Valheim+ Mod on AMP Game Instance
+![amp](docs/vpluslogo.png)
+
 Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
 - Link to the repo: https://github.com/nxPublic/ValheimPlus
 
