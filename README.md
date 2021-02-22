@@ -77,7 +77,8 @@ This helps with lag.
 ![valheim_oracle](docs/lb6.png)
 ![valheim_oracle](docs/lb7.png)
 
-## Install the Linux Game Server Manager(LGSM)
+## Method 1: Install the Linux Game Server Manager(LGSM)
+![valheim_oracle](docs/LGSM.jpg)
 More info here: https://linuxgsm.com/lgsm/vhserver/
 
 ### Dependencies install
@@ -148,7 +149,8 @@ wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm
 ```
 Once you start the server it will populate with a default config. Check out steps below to migrate your own world. 
 ___
-## OR Install CubeCoders Application Management Panel(AMP)
+## OR Method 2: Install CubeCoders Application Management Panel(AMP)
+![valheim_oracle](docs/AMP.png)
 More info at the link: 
 - https://cubecoders.com/AMP
 - https://cubecoders.com/AMPInstall
