@@ -17,9 +17,10 @@ But if you want to use your free trial credits or upgrade then I would recommend
 5. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
 6. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
 7. [OR Method 2 Install CubeCoders Application Management Panel(AMP)](#or-method-2-install-cubecoders-application-management-panelamp)
-8. [Optional Setup Valheim+ on AMP Game Instance](#setup-valheim-mod-on-amp-game-instance)
-9. [Optional Reference - My Valheim+ config file](#reference---my-valheim-config-file)
-10. [Optional - Migrate your world](#optional-migrate-your-world)
+8. [Optional Setup Valheim+ Mod](#optional-setup-valheim-mod)
+9. [Optional Reference - My Valheim+ config file](#optional-reference---my-valheim-config-file)
+10. [Optional Reference - My Valheim LGSM config file](#optional-reference---my-lgsm-valheim-config-file)
+11. [Optional - Migrate your Existing Valheim World](#optional-migrate-your-existing-valheim-world)
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
