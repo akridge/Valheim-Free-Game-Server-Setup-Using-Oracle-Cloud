@@ -38,11 +38,35 @@ Choose the following and make sure to download the SSH keys to login in the next
 ![valheim_oracle](docs/s3.jpg)
 ![valheim_oracle](docs/s4.jpg)
 
-## Login to the Virtual Machine
+## Login to the Cloud Virtual Machine
 
-This will be different for every operating system so check out the offical oracle doc:
-https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm
+This will be different for every operating system so check out the official Oracle documentation:
+- https://docs.oracle.com/en-us/iaas/Content/Compute/Tasks/accessinginstance.htm
+- I'm on Windows 10 and will use Putty(https://www.putty.org/)
+### Convert private key into a putty key
+First thing first is to **convert the .key private key** file downloaded above into a **putty key(.ppk)**
+1.  Open PuTTYgen.
+2.  Click  **Load**, and select the private key generated when you created the instance. The extension for the key file is  `.key`.
+3. Enter a password for the key.
+4.  Then click  **Save private key**.
+5.  Specify a name for the key. The extension for new private key is  `.ppk`.
+6.  Click  **Save**.
 
+### Connect to the VM instance using the .ppk private key file
+1.  Open PuTTY.
+2.  On the left-hand side **Category**  pane,  select  **Session**  and enter the following:
+ 
+    -   **Host Name (your IP address):**
+    -   **Port:**  22
+    -   **Connection type:**  SSH
+3.  In the  **Category**  pane, expand  **Connection**, expand  **SSH**, and then click  **Auth**.
+4.  Click  **Browse**, and then select your .ppk private key file.
+5.  Click  **Open**  to start the session.
+6.     Your Username is the default username for the instance. 
+        For Oracle Linux and CentOS images, the default username is  `opc`. 
+        For Ubuntu images, the default username is  `ubuntu`.
+7. Password is the password for the key you just setup
+* Note: First time connecting to the instance, you might see a message that the server's host key is not cached in the registry. Click  **Yes**  to continue the connection.
 
 ## Go ahead and setup the firewall stuff on the server and cloud account
 
