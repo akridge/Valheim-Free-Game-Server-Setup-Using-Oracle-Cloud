@@ -223,9 +223,9 @@ This part is just wonderfully easy.
 ### This is the file browser
 ![amp](docs/amp/s10.png)
 
-## Setup Valheim+ Mod on AMP Game Instance
+## Optional Setup Valheim+ Mod
 ![amp](docs/vpluslogo.png)
-
+### This Valheim+ Mod Setup is for an AMP Game Instance, but its a similar process on LGSM too. Just different folders. 
 Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
 - Link to the repo: https://github.com/nxPublic/ValheimPlus
 
@@ -310,10 +310,13 @@ So I got a bunch of errors and I wasn't the only one. But in the end it still wo
 ### Testing
 Its good to see if it works on your standalone system first before testing the dedicated server. If your system works then just make sure you have the same valheim_plus.cfg file on both the AMP server folder and local machine. 
 
-## Reference - My Valheim+ config file
+## Optional Reference - My Valheim+ config file
 https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
 
-## Optional: Migrate your world
+## Optional Reference - My LGSM Valheim config file
+https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/vhserver.cfg
+
+## Optional: Migrate your Existing Valheim World
 Drag and drop your world file from your local drive to the server data folder using filezilla. 
 ### If using LGSM
 Copy from local drive
