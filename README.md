@@ -20,10 +20,10 @@ But if you want to use your free trial credits or upgrade then I would recommend
 8. [Optional Setup Valheim+ Mod](#optional-setup-valheim-mod)
 
 ### Reference/FAQ
-1.[Login to Valheim using your New Dedicated Server](#optional-migrate-your-existing-valheim-world)
-2.[Migrate your Existing Valheim World](#optional-migrate-your-existing-valheim-world)
-3 [Example Valheim LGSM config file](#optional-reference---my-lgsm-valheim-config-file)
-4 [My Valheim+ config file](#optional-reference---my-valheim-config-file)
+1. [Login to Valheim using your New Dedicated Server](#login-to-valheim-using-your-new-dedicated-server)
+2. [Migrate your Existing Valheim World](#migrate-your-existing-valheim-world) 
+3. [Example Valheim LGSM config file](#example-lgsm-valheim-config-file) 
+4. [My Valheim+ config file](#my-valheim-config-file) 
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
@@ -324,7 +324,9 @@ ___
 - Then click on the "Add a Server" button.
 - Use IPAddress:2457 typically
 - Hit search
-
+![amp](docs/s1.png)
+![amp](docs/s2.png)
+![amp](docs/s3.png)
 ## Migrate your Existing Valheim World
 Drag and drop your world file from your local drive to the server data folder using filezilla. 
 ### If using LGSM
@@ -355,8 +357,8 @@ AMP example
 ```
 sudo chmod -R ugo+rwx /home/amp/
 ```
-## My Valheim+ config file
-https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
-
 ## Example LGSM Valheim config file
 https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/vhserver.cfg
+
+## My Valheim+ config file
+https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
