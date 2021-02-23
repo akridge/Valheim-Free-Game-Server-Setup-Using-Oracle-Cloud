@@ -52,6 +52,9 @@ First thing first is to **convert the .key private key** file downloaded above i
 5.  Specify a name for the key. The extension for new private key is  `.ppk`.
 6.  Click  **Save**.
 
+![valheim_oracle](docs/vm/vm1.jpg)
+![valheim_oracle](docs/vm/vm2.jpg)
+
 ### Connect to the VM instance using the .ppk private key file
 1.  Open PuTTY.
 2.  On the left-hand side **Category**  pane,  select  **Session**  and enter the following:
@@ -67,6 +70,13 @@ First thing first is to **convert the .key private key** file downloaded above i
         For Ubuntu images, the default username is  `ubuntu`.
 7. Password is the password for the key you just setup
 * Note: First time connecting to the instance, you might see a message that the server's host key is not cached in the registry. Click  **Yes**  to continue the connection.
+* 
+![valheim_oracle](docs/vm/vm3.jpg)
+![valheim_oracle](docs/vm/vm4.jpg)
+![valheim_oracle](docs/vm/vm5.jpg)
+![valheim_oracle](docs/vm/vm6.jpg)
+![valheim_oracle](docs/vm/vm7.jpg)
+![valheim_oracle](docs/vm/vm8.jpg)
 
 ## Go ahead and setup the firewall stuff on the server and cloud account
 
