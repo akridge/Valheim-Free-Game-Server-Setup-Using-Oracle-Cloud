@@ -18,9 +18,12 @@ But if you want to use your free trial credits or upgrade then I would recommend
 6. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
 7. [OR Method 2 Install CubeCoders Application Management Panel(AMP)](#or-method-2-install-cubecoders-application-management-panelamp)
 8. [Optional Setup Valheim+ Mod](#optional-setup-valheim-mod)
-9. [Optional Reference - My Valheim+ config file](#optional-reference---my-valheim-config-file)
-10. [Optional Reference - My Valheim LGSM config file](#optional-reference---my-lgsm-valheim-config-file)
-11. [Optional - Migrate your Existing Valheim World](#optional-migrate-your-existing-valheim-world)
+
+### Reference/FAQ
+1.[Login to Valheim using your New Dedicated Server](#optional-migrate-your-existing-valheim-world)
+2.[Migrate your Existing Valheim World](#optional-migrate-your-existing-valheim-world)
+3 [Example Valheim LGSM config file](#optional-reference---my-lgsm-valheim-config-file)
+4 [My Valheim+ config file](#optional-reference---my-valheim-config-file)
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
@@ -310,14 +313,19 @@ So I got a bunch of errors and I wasn't the only one. But in the end it still wo
 
 ### Testing
 Its good to see if it works on your standalone system first before testing the dedicated server. If your system works then just make sure you have the same valheim_plus.cfg file on both the AMP server folder and local machine. 
+___
+# Reference/FAQ
 
-## Optional Reference - My Valheim+ config file
-https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
+## Login to Valheim using your New Dedicated Server
+- Open Steam
+- Click "View" across the top. 
+- Then click on "Servers" on that menu.
+- A popup window will appear and select the "Favorites" tab
+- Then click on the "Add a Server" button.
+- Use IPAddress:2457 typically
+- Hit search
 
-## Optional Reference - My LGSM Valheim config file
-https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/vhserver.cfg
-
-## Optional: Migrate your Existing Valheim World
+## Migrate your Existing Valheim World
 Drag and drop your world file from your local drive to the server data folder using filezilla. 
 ### If using LGSM
 Copy from local drive
@@ -347,3 +355,8 @@ AMP example
 ```
 sudo chmod -R ugo+rwx /home/amp/
 ```
+## My Valheim+ config file
+https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
+
+## Example LGSM Valheim config file
+https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/vhserver.cfg
