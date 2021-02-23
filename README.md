@@ -12,7 +12,7 @@ But if you want to use your free trial credits or upgrade then I would recommend
 ### Table of Contents
 1. [Sign up for Oracle Cloud Free Tier](#sign-up-for-oracle-cloud-free-tier)
 2. [Create The Virtual Machine.](#create-the-virtual-machine)
-3. [Login to the Virtual Machine](#login-to-the-virtual-machine)
+3. [Login to the Virtual Machine](#login-to-the-cloud-virtual-machine)
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
 5. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
 6. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
