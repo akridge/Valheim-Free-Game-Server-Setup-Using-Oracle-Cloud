@@ -15,9 +15,9 @@ But if you want to use your free trial credits or upgrade then I would recommend
 3. [Login to the Virtual Machine](#login-to-the-cloud-virtual-machine)
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
 5. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
-### Method 1
+### Valheim Install Method 1
 6. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
-### Or Method 2
+### Or Valheim Install Method 2
 7. [Method 2: Install CubeCoders Application Management Panel(AMP)](#or-method-2-install-cubecoders-application-management-panelamp)
 ### Optional Installs
 8. [Optional Setup Valheim+ Mod](#optional-setup-valheim-mod)
