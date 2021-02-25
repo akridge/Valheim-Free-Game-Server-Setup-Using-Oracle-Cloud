@@ -24,6 +24,7 @@ But if you want to use your free trial credits or upgrade then I would recommend
 2. [Migrate your Existing Valheim World](#migrate-your-existing-valheim-world) 
 3. [Example Valheim LGSM config file](#example-lgsm-valheim-config-file) 
 4. [My Valheim+ config file](#my-valheim-config-file) 
+5. [How to Tell Valheim Plus is Working](#how-to-tell-valheim-is-working)
 
 ## Sign up for Oracle Cloud Free Tier
 Link: https://www.oracle.com/cloud/free/
