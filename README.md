@@ -296,9 +296,6 @@ Make sure to change the script to include your instance name.
 sudo su
 chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/start_game_bepinex.sh
 ```
-
-### Testing
-
 ___
 # Reference/FAQ
 
@@ -348,3 +345,9 @@ https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main
 
 ## My Valheim+ config file
 https://github.com/akridge/Oralce-Cloud-Free-Valheim-Game-Server-Setup/blob/main/docs/valheim_plus.cfg
+
+## How to Tell Valheim+ is Working
+To check if client installed correctly just load the game and you should see the Valheim logo changed with the Valheim+ logo
+![amp](docs/vplus1.png)
+To check if server is working, once connected hit F5 for console output. It will note which version of Valheim+ is installed. 
+![amp](docs/vplus2.png)
