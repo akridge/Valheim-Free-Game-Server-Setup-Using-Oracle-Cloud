@@ -238,7 +238,7 @@ Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least.
 - Link to the repo: https://github.com/nxPublic/ValheimPlus
 
 ### Setup Valheim+ on your machine first. Download the latest package called WindowsClient.zip over at their link. (Scroll down and click "assets")
-- https://github.com/nxPublic/ValheimPlus/releases/tag/0.8
+- https://github.com/nxPublic/ValheimPlus/releases/
 - Locate your game folder by starting up steam and:
 - Right click the valheim game in your steam library
 - Go to Manage>Browse local files
@@ -246,34 +246,36 @@ Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least.
 - Then just unzip everything in there
 
 ### Download the latest package called UnixServer.zip over at their link. (Scroll down and click "assets")
-- https://github.com/nxPublic/ValheimPlus/releases/tag/0.8
+- https://github.com/nxPublic/ValheimPlus/releases/
 
 ### Go ahead and unzip it. Then edit the run_bepinex.sh file. I did this before uploading to the server
 
-Scroll to the bottom of the run_bepinex.sh file and find the section about server and password. This is where you put in the server name, password, and world you setup in AMP.
+Scroll to the bottom of the start_server_bepinex.sh file and find the section about server and password. This is where you put in the server name, password, and world you setup in AMP.
 ```
-"${PWD}/${executable_name}" -name YOURSERVERNAME -password YOURPASSWORD -nographics -batchmode -port YOURPORTNUMBER -world WORLDNAME
+./valheim_server.x86_64 -name YOURSERVERNAME -password YOURPASSWORD -port YOURPORTNUMBER -world WORLDNAME
 ```
 ### Also edit your config(valheim_plus.cfg) file in the unziped folder UnixServer\BepInEx\config\valheim_plus.cfg
 Change whatever you like, but for me I had to also update the following: Look for the section called server. Find my config attached for reference.
 ```
 [Server]
+
+; Change false to true to enable this section
 enabled=false
-; enable/disable Server changes
 
+; Modify the amount of players on your Server
 maxPlayers=10
-; (int) default is 10
 
+; Removes the requirement to have a server password
 disableServerPassword=false
-; (boolean) default is false
 
-enforceConfiguration=false
-; enforce every user trying to join your game or server to have the same mod configuration.
-; NOTE: if people want to join your server with a custom configuration, they need to set this setting to false as well as the server.
-
+; This settings add a version control check to make sure that people that try to join your game or the server you try to join has V+ installed
 enforceMod=false
-; enforce every user to atleast have the mod installed when connecting to the server
-; turn this off to remove version restrictions from your client and from your server
+
+; The total amount of data that the server and client can send per second in kilobyte
+dataRate=60
+
+; The interval in seconds that the game auto saves at (client only)
+autoSaveInterval=1200
 ```
 
 ### Now Locate your AMP Instance server folder
