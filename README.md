@@ -294,25 +294,11 @@ So to do this I used filezilla(https://filezilla-project.org/) ftp program since
 Make sure to change the script to include your instance name.
 ```
 sudo su
-chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/run_bepinex.sh
+chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/start_game_bepinex.sh
 ```
-### Change your working directory: 
-Make sure to change the script to include your instance name.
-```
-cd /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/
-```
-### Then run: run_bepinex.sh
-```
-./run_bepinex.sh
-```
-
-### Waiting for the install
-So I got a bunch of errors and I wasn't the only one. But in the end it still worked. I waited like 10/15mins and eventually tried it. Here is what the errors look like and the solution was to edit the valheim_plus.cfg server stuff in the steps above. 
-- https://github.com/nxPublic/ValheimPlus/issues/41
-
 
 ### Testing
-Its good to see if it works on your standalone system first before testing the dedicated server. If your system works then just make sure you have the same valheim_plus.cfg file on both the AMP server folder and local machine. 
+
 ___
 # Reference/FAQ
 
