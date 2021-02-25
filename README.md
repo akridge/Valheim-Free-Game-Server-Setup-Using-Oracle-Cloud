@@ -19,8 +19,8 @@ But if you want to use your free trial credits or upgrade then I would recommend
 6. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
 ### Or Valheim Install Method 2
 7. [Method 2: Install CubeCoders Application Management Panel(AMP)](#or-method-2-install-cubecoders-application-management-panelamp)
-### Optional Installs
-8. [Optional Setup Valheim+ Mod](#optional-setup-valheim-mod)
+### Optional
+8. [Setup Valheim+ Mod](#optional-setup-valheim-mod)
 
 ### Reference/FAQ
 1. [How to Login to Valheim your Server](#login-to-valheim-using-your-new-dedicated-server)
