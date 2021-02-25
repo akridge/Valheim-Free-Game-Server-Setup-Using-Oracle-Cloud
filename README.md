@@ -302,6 +302,11 @@ Make sure to change the script to include your instance name.
 sudo su
 chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/start_game_bepinex.sh
 ```
+
+## Note: If installing Valheim Plus on LGSM then its a similar process as above, but you must change the folder path where you install the mod:
+```
+/home/vhserver/serverfiles
+```
 ___
 # Reference/FAQ
 
