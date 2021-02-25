@@ -309,7 +309,7 @@ chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/sta
 /home/vhserver/serverfiles
 ```
 ### For LGSM, to login to SFTP, you must use your Key file like in Putty. Example:
-
+![lgsm](docs/lgsm_ftp.png)
 
 ___
 # Reference/FAQ
