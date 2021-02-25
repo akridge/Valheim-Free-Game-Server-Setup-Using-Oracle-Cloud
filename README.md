@@ -296,7 +296,7 @@ So to do this I used filezilla(https://filezilla-project.org/) ftp program since
 ### Then just drag and drop the UnixServer files over. Say okay to overwrite. 
 ![amp](docs/amp/s20.png)
 
-### Once thats done then you have to login to your server console(again I used putty) and change permissions to that run_bepinex.sh file
+### Once thats done then you have to login to your server console(again I used putty) and change permissions to that start_game_bepinex.sh file
 Make sure to change the script to include your instance name.
 ```
 sudo su
