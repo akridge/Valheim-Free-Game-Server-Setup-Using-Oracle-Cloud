@@ -303,10 +303,14 @@ sudo su
 chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/start_game_bepinex.sh
 ```
 
-## Note: If installing Valheim Plus on LGSM then its a similar process as above, but you must change the folder path where you install the mod:
+## Note: If installing Valheim Plus on LGSM 
+### Then its a similar process as above, but you must change the folder path where you install the mod:
 ```
 /home/vhserver/serverfiles
 ```
+### For LGSM, to login to SFTP, you must use your Key file like in Putty. Example:
+
+
 ___
 # Reference/FAQ
 
