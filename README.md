@@ -34,7 +34,7 @@ Link: https://www.oracle.com/cloud/free/
 
 ![valheim_oracle](docs/oracle_free_tier.png)
 - Its a free trial and a free account too. 
-- You won't be charged and can still use everal free services after the trail. 
+- You won't be charged and can still use the free services after the trial. 
 - Plus they nicely label all the free stuff. 
 - In this we will use 1 of the 2 free virtual machines. 
 
@@ -189,14 +189,17 @@ wget -O linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && bash linuxgsm
 ./vhserver backup
 ./vhserver monitor
 ```
-Once you start the server it will populate with a default config. Check out steps below to migrate your own world. 
+Once you start the server it will populate with a default config. Make sure to edit the config to give the Valheim Server a name, seed, and password: 
+1. [An Example Valheim LGSM config file](#example-lgsm-valheim-config-file) 
+2. [How to Migrate your Existing Valheim World](#migrate-your-existing-valheim-world) 
 ___
 ## OR Method 2: Install CubeCoders Application Management Panel(AMP)
 ![valheim_oracle](docs/AMP.png)
 More info at these links.
 - https://cubecoders.com/AMP
 - https://cubecoders.com/AMPInstall
--- note its paid server administration software. But its fairly inexpensive and feature rich. 
+-- **Note AMP is a paid server administration software.** 
+-- But its fairly inexpensive and feature rich. I think its only like $10-ish USD.
 
 ### Install AMP 
 This is their quick install command. It will walk you through all the steps and is very easy. I skipped the https stuff.
