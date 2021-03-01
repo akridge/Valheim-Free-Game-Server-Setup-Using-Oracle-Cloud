@@ -236,9 +236,46 @@ This part is just wonderfully easy.
 
 ## Optional Setup Valheim+ Mod
 ![amp](docs/vpluslogo.png)
-### This Valheim+ Mod Setup is for an AMP Game Instance, but its a similar process on LGSM too. Just different folders. 
-Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least. Here is what I did to set it up with AMP.
-- Link to the repo: https://github.com/nxPublic/ValheimPlus
+
+### Setup Valheim+ Mod on AMP
+AMP makes things super easy again. Just create a new instance and select Valheim+ install. Then follow similar steps as above to config everything. 
+![amp](docs/vplus_amp1.png)
+
+### Make sure to Setup Valheim+ on your machine as well. Download the latest package called WindowsClient.zip over at their link. (Scroll down and click "assets")
+- https://github.com/nxPublic/ValheimPlus/releases/
+- Locate your game folder by starting up steam and:
+- Right click the valheim game in your steam library
+- Go to Manage>Browse local files
+- Steam should open your game folder for you when clicked
+- Then just unzip everything in there
+
+### Also edit your valheim plus server config(valheim_plus.cfg) file in BepInEx\config\valheim_plus.cfg
+Change whatever you like, but for me I had to also update the following: Look for the section called server. Find my config attached for reference.
+```
+[Server]
+
+; Change false to true to enable this section
+enabled=false
+
+; Modify the amount of players on your Server
+maxPlayers=10
+
+; Removes the requirement to have a server password
+disableServerPassword=false
+
+; This settings add a version control check to make sure that people that try to join your game or the server you try to join has V+ installed
+enforceMod=false
+
+; The total amount of data that the server and client can send per second in kilobyte
+dataRate=60
+
+; The interval in seconds that the game auto saves at (client only)
+autoSaveInterval=1200
+```
+
+### Setup Valheim+ Mod on LGSM
+For LGSM its going to take a bit more. Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least. Here is what I did to set it up with LGSM.
+- Link to the V+ repo: https://github.com/nxPublic/ValheimPlus
 
 ### Setup Valheim+ on your machine first. Download the latest package called WindowsClient.zip over at their link. (Scroll down and click "assets")
 - https://github.com/nxPublic/ValheimPlus/releases/
@@ -251,7 +288,7 @@ Okay the Valheim+ Mod documentation leaves a lot to be desired to say the least.
 ### Download the latest package called UnixServer.zip over at their link. (Scroll down and click "assets")
 - https://github.com/nxPublic/ValheimPlus/releases/
 
-### Go ahead and unzip it. Then edit the run_bepinex.sh file. I did this before uploading to the server
+### Go ahead and unzip it. Then edit the start_server_bepinex.sh file. I did this before uploading to the server
 
 Scroll to the bottom of the start_server_bepinex.sh file and find the section about server and password. This is where you put in the server name, password, and world you setup in AMP.
 ```
@@ -280,40 +317,24 @@ dataRate=60
 ; The interval in seconds that the game auto saves at (client only)
 autoSaveInterval=1200
 ```
+### For LGSM, login via SFTP, you must use your Key file like in Putty. 
+So to do this I used filezilla(https://filezilla-project.org/) ftp program since its free. 
+Example:
+![lgsm](docs/lgsm_ftp.png)
 
-### Now Locate your AMP Instance server folder
-So to do this I used filezilla(https://filezilla-project.org/) ftp program since its free. The AMP instance setup above must be running, but server can be off. 
-![amp](docs/amp/s13.png)
-### Go to File>Site Manager
-![amp](docs/amp/s14.png)
-### Add new site. Host is your ip address, port is the Instance SFTP port you setup above. To find it click on instance > edit ports. To add a different instance then you just change the port and should be same IP address. 
-![amp](docs/amp/s15.png)
-### User/Password is Admin and the password you setup for your AMP portal
-![amp](docs/amp/s16.png)
-### Click connect and you should see the file directory on the right side and your local files on the left. 
-![amp](docs/amp/s17.png)
-### As a close up the instance server game file are in the number folder 
-![amp](docs/amp/s18.png)
-### Open that up and you see all the game files. 
-![amp](docs/amp/s19.png)
-### Then just drag and drop the UnixServer files over. Say okay to overwrite. 
-![amp](docs/amp/s20.png)
-
-### Once thats done then you have to login to your server console(again I used putty) and change permissions to that start_game_bepinex.sh file
-Make sure to change the script to include your instance name.
-```
-sudo su
-chmod u+x /home/amp/.ampdata/instances/INSERTINSTANCENAMEHERE/Valheim/896660/start_game_bepinex.sh
-```
-
-## Note: If installing Valheim Plus on LGSM 
-### Then its a similar process as above, but you must change the folder path where you install the mod:
+### Navigate to folder path where you install the mod:
 ```
 /home/vhserver/serverfiles
 ```
-### For LGSM, to login to SFTP, you must use your Key file like in Putty. Example:
-![lgsm](docs/lgsm_ftp.png)
+### Then just drag and drop the UnixServer files over. Say okay to overwrite. 
+![amp](docs/amp/s20.png)
 
+### If you have issues with moving files or running V+ due to server permissions then:
+Update them via server console(putty)
+LGSM 
+```
+sudo chmod -R ugo+rwx /home/vhserver/
+```
 ___
 # Reference/FAQ
 
