@@ -1,4 +1,4 @@
-# Oralce-Cloud-Valheim-Game-Server-Setup-for-Free
+# Oracle-Cloud-Valheim-Game-Server-Setup-for-Free
 ![valheim_oracle](docs/valheim_oracle.png)
 
 Hopefully this helps someone get started. The free version will only be good for a couple people. 
