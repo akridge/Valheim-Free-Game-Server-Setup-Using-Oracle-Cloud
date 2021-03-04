@@ -335,6 +335,15 @@ LGSM
 ```
 sudo chmod -R ugo+rwx /home/vhserver/
 ```
+### If the  mod does not start with the LGSM server then try doing this:
+1. Edit start_server_bepinex.sh and replace the arguments of Valheim executable with $@ so the last line looks like this :
+```
+exec ./valheim_server.x86_64 $@
+```
+2. Add the following to  your vhserver.cfg
+```
+executable="./start_server_bepinex.sh" to your your vhserver.cfg
+```
 ___
 # Reference/FAQ
 
