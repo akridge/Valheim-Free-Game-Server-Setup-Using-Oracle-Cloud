@@ -106,7 +106,8 @@ sudo firewall-cmd --reload
 ![valheim_oracle](docs/s5.jpg)
 ![valheim_oracle](docs/s6.jpg)
 ![valheim_oracle](docs/s7.jpg)
-![valheim_oracle](docs/s8.jpg)
+![valheim_oracle](docs/ingress_rule_01.png)
+![valheim_oracle](docs/ingress_rule_02.png)
 ![valheim_oracle](docs/s9.jpg)
 
 ## Method 1: Install the Linux Game Server Manager(LGSM)
