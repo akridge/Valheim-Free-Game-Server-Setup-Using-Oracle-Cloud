@@ -14,13 +14,14 @@ But if you want to use your free trial credits or upgrade then I would recommend
 2. [Create The Virtual Machine.](#create-the-virtual-machine)
 3. [Login to the Virtual Machine](#login-to-the-cloud-virtual-machine)
 4. [Go ahead and setup the firewall stuff on the server and cloud account](#go-ahead-and-setup-the-firewall-stuff-on-the-server-and-cloud-account)
-5. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
 ### Valheim Install Method 1
-6. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
+5. [Method 1: Install the Linux Game Server Manager(LGSM)](#method-1-install-the-linux-game-server-managerlgsm)
 ### Or Valheim Install Method 2
-7. [Method 2: Install CubeCoders Application Management Panel(AMP)](#or-method-2-install-cubecoders-application-management-panelamp)
+6. [Method 2: Install CubeCoders Application Management Panel(AMP)](#or-method-2-install-cubecoders-application-management-panelamp)
+
 ### Optional
-8. [Setup Valheim+ Mod](#optional-setup-valheim-mod)
+1. [Setup the Free Network Load Balancer](#setup-the-free-network-load-balancer)
+2. [Setup Valheim+ Mod](#optional-setup-valheim-mod)
 
 ### Reference/FAQ
 1. [How to Login to Valheim your Server](#login-to-valheim-using-your-new-dedicated-server)
@@ -107,17 +108,6 @@ sudo firewall-cmd --reload
 ![valheim_oracle](docs/s7.jpg)
 ![valheim_oracle](docs/s8.jpg)
 ![valheim_oracle](docs/s9.jpg)
-
-## Setup the Free Network Load Balancer
-This helps with lag. 
-
-![valheim_oracle](docs/lb1.png)
-![valheim_oracle](docs/lb2.png)
-![valheim_oracle](docs/lb3.png)
-![valheim_oracle](docs/lb4.png)
-![valheim_oracle](docs/lb5.png)
-![valheim_oracle](docs/lb6.png)
-![valheim_oracle](docs/lb7.png)
 
 ## Method 1: Install the Linux Game Server Manager(LGSM)
 ![valheim_oracle](docs/LGSM.jpg)
@@ -236,6 +226,17 @@ This part is just wonderfully easy.
 
 ## Optional Setup Valheim+ Mod
 ![amp](docs/vpluslogo.png)
+
+## Setup the Free Network Load Balancer
+This helps with lag. 
+
+![valheim_oracle](docs/lb1.png)
+![valheim_oracle](docs/lb2.png)
+![valheim_oracle](docs/lb3.png)
+![valheim_oracle](docs/lb4.png)
+![valheim_oracle](docs/lb5.png)
+![valheim_oracle](docs/lb6.png)
+![valheim_oracle](docs/lb7.png)
 
 ### Setup Valheim+ Mod on AMP
 AMP makes things super easy again. Just create a new instance and select Valheim+ install. Then follow similar steps as above to config everything. 
