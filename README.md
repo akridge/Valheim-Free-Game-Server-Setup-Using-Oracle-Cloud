@@ -108,6 +108,7 @@ sudo firewall-cmd --reload
 ![valheim_oracle](docs/s7.jpg)
 ![valheim_oracle](docs/ingress_rule_01.png)
 ![valheim_oracle](docs/ingress_rule_02.png)
+### At the end you should have the two ports added to your ingress rule set as seen below
 ![valheim_oracle](docs/s9.jpg)
 
 ## Method 1: Install the Linux Game Server Manager(LGSM)
@@ -229,7 +230,7 @@ This part is just wonderfully easy.
 ![amp](docs/vpluslogo.png)
 
 ## Setup the Free Network Load Balancer
-This helps with lag. 
+This is optional but helps with network spikes and lag. In a recent update I was able to run it without it, but results may vary with regions. 
 
 ![valheim_oracle](docs/lb1.png)
 ![valheim_oracle](docs/lb2.png)
