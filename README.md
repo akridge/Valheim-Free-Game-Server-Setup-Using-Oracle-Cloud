@@ -1,13 +1,12 @@
 # Valheim-Free-Game-Server-Setup-Using-Oracle-Cloud
 ![valheim_oracle](docs/valheim_oracle.png)
 
-Hopefully this helps someone get started. The free version will only be good for a couple people. 
+Note: Some of the repo/how to is out of date. Please view updated free resouces here: https://www.oracle.com/il-en/cloud/free/
 
-But if you want to use your free trial credits or upgrade then I would recommend the following and its pretty much the same setup steps as below: 
-| Price | Shape | CPU Core | Memory(GB) | Load Balancer |
-| ----------- | ----------- | ----------- | ----------- |  ----------- |
-| Free | VM.Standard.E2.1.Micro| 1 | 1 |1 w/ 10mbps|
-| Paid(recommended)| VM.Standard.E3.Flex| 1 | 3|1 w/ 10mbps|
+Hopefully this helps someone get started. I would recommend the following for smooth performance: 
+| Price| CPU Core | Memory(GB) | Load Balancer(optional) |
+| ----------- | ----------- | ----------- |  ----------- |
+| Free | 1 | at least 3 |1 (w/ 10mbps)|
 
 ### Table of Contents
 1. [Sign up for Oracle Cloud Free Tier](#sign-up-for-oracle-cloud-free-tier)
